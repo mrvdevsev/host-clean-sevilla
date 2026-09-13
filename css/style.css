@@ -456,41 +456,65 @@ header {
 
     /* --- FORMULARIO (MODAL) GIGANTE --- */
     .modal-content {
-        width: 90% !important; /* Ocupa casi todo el ancho lateral */
-        max-width: 400px; /* Pero no más de 400px */
-        margin: 15% auto !important; /* Lo subimos un poco */
-        padding: 30px 20px !important; /* Reducimos aire interno */
-        border: 1px solid var(--gold); /* Mantenemos el borde elegante */
+        width: 88% !important;
+        max-width: 420px !important;
+        margin: 10% auto !important;
+        padding: 35px 20px !important;
+        border: 1px solid var(--gold);
+        box-sizing: border-box !important;
     }
 
     .modal-title {
         font-size: 1.3rem !important;
-        margin-bottom: 25px !important;
+        margin-bottom: 20px !important;
         text-align: center;
     }
 
     .luxury-form {
-        gap: 15px !important; /* Estrecha el espacio entre campos */
+        gap: 18px !important;
+        margin-top: 15px !important;
     }
 
+    /* Separa Nombre y Correo en dos líneas limpias en móvil */
+    .luxury-form .form-row {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 18px !important;
+        width: 100% !important;
+    }
+
+    .luxury-form .form-full {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Altura cómoda para tocar con el dedo y bordes claros */
     .luxury-form input, 
     .luxury-form select, 
     .luxury-form textarea {
-        padding: 8px 0 !important;
-        font-size: 0.75rem !important;
-        margin-bottom: 0 !important;
+        padding: 14px 8px !important;
+        font-size: 0.85rem !important;
+        letter-spacing: 1.5px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .luxury-form textarea {
+        min-height: 90px !important;
+        resize: vertical;
     }
     
-    /* Centramos y ajustamos el botón de enviar del modal */
+    /* Botón de enviar proporcionado */
     .form-footer {
-        margin-top: 15px !important;
+        margin-top: 25px !important;
         text-align: center;
     }
 
     .form-footer .btn-main {
-        width: 100% !important; /* Aquí sí, que ocupe todo el ancho del formulario */
-        padding: 12px !important;
-        font-size: 0.8rem !important;
+        width: 100% !important;
+        padding: 15px !important;
+        font-size: 0.85rem !important;
+        letter-spacing: 2px !important;
     }
 
     /* --- NUEVO: BORDE MÁS FUERTE EN MÓVIL --- */
