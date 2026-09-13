@@ -90,20 +90,17 @@
             <div class="gold-line" style="margin: 10px 0 30px 0;"></div>
         </div>
 
-        <form class="luxury-form">
+        <form class="luxury-form" action="https://formspree.io/f/xrpgwqqd" method="POST">
             <div class="form-row">
-                <input type="text" placeholder="NOMBRE COMPLETO" required>
-                <input type="email" placeholder="CORREO ELECTRÓNICO" required>
+                <input type="text" name="nombre" placeholder="NOMBRE COMPLETO" required>
+                <input type="email" name="email" placeholder="CORREO ELECTRÓNICO" required>
             </div>
-            
             <div class="form-full">
-                <input type="text" placeholder="ASUNTO" required>
+                <input type="text" name="asunto" placeholder="ASUNTO" required>
             </div>
-            
             <div class="form-full">
-                <textarea placeholder="MENSAJE" rows="4" required></textarea>
+                <textarea name="mensaje" placeholder="MENSAJE" rows="4" required></textarea>
             </div>
-            
             <div class="form-footer">
                 <button type="submit" class="btn-main" style="width: 100%;">Enviar Solicitud</button>
             </div>
